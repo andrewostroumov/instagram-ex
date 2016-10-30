@@ -1,6 +1,6 @@
 # Instagram
 
-**TODO: Add description**
+Internal API Instagram client written in elixir.
 
 ## Installation
 
@@ -21,4 +21,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:instagram]]
     end
     ```
-
