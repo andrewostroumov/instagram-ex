@@ -6,11 +6,11 @@ defmodule Instagram.BucketTest do
     {:ok, bucket: bucket}
   end
 
-  test "get nil value from key", %{bucket: bucket} do
+  test "get nil value from undefined key", %{bucket: bucket} do
     assert Instagram.Bucket.get(bucket, "key") == nil
   end
 
-  test "set value to key", %{bucket: bucket} do
+  test "get value from defined key", %{bucket: bucket} do
     Instagram.Bucket.set(bucket, "key", 3)
     assert Instagram.Bucket.get(bucket, "key") == 3
   end
